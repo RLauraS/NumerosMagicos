@@ -9,8 +9,8 @@ function leerDatoFormulario(e) {
 
   let input = document.querySelector('input');
   let datoIngresado = parseInt(input.value);
+  console.log(datoIngresado)
   let numeroMagico = getRandomIntInclusive(1, 10);
-  console.log(`El número mágico es: ${numeroMagico}`);
 
   if (datoIngresado === numeroMagico) {
     alert('¡Felicidades, adivinaste el número mágico!');
